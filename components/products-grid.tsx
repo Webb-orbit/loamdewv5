@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
+import ProductDetail from "@/components/product-detail"
 import { useEffect, useState } from "react"
 import { getAllProducts, type Product } from "@/lib/products"
 
@@ -62,6 +63,7 @@ export function ProductsGrid() {
             </div>
           </Link>
         </div>
+      <ProductDetail product={product}/>
       ))}
     </div>
   )
