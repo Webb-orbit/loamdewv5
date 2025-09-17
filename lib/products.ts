@@ -1,4 +1,4 @@
-import Productbase from "@/app/libapi/product_api"
+import Productbase from "@/libapi/product_api"
 
 export interface Product {
   $id: string

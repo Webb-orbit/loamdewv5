@@ -5,7 +5,7 @@ export interface UserDocument {
   name: string
   address: string
   ordercount: number
-  cart: string // Array stored as string in Appwrite
+  cart: string // Array stored as string in Appwrite yo
   zipcode: string
   oauthid: string
 }

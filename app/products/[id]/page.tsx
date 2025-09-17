@@ -2,7 +2,7 @@ import { notFound } from "next/navigation"
 import { ProductDetail } from "@/components/product-detail"
 import { SimpleHeader } from "@/components/simple-header"
 import { RelatedProducts } from "@/components/related-products"
-import Productbase from "@/app/libapi/product_api"
+import Productbase from "@/libapi/product_api"
 
 interface ProductPageProps {
   params: {
