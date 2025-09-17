@@ -36,10 +36,10 @@ export function convertToProduct(doc: any): Product {
 }
 
 // Get all products from Appwrite
-export async function getAllProducts(): Promise<Product[]> {
+export async function getAllProducts(): Promise<any> {
   try {
     const response = await Productbase.getAllProducts()
-    return response.documents.map(convertToProduct)
+    return response?.documents
   } catch (error) {
     console.error("Error fetching products:", error)
     return []
